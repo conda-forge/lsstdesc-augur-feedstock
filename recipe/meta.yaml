@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 {% set python_min = "3.11" %}
 
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: "https://github.com/LSSTDESC/augur/archive/{{ version }}.tar.gz"
-  sha256: "404bee4e2b7fe2b1f7db962cda19a5de12ada5da0058b0cc836c22ac1488b1de"
+  sha256: "e213040d7e68bdba6fd0d520c4d26d88de59e311a5d3c44cdbf82ded295731fc"
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools 
+    - setuptools
   run:
     - python >={{ python_min }}
     - numpy >=2.0
