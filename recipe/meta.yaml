@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.2.4.1" %}
 {% set python_min = "3.11" %}
 
 
@@ -7,8 +7,8 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://github.com/LSSTDESC/augur/archive/{{ version }}.tar.gz"
-  sha256: "d47d088bfca0f2dbf73b6df3447b2dbce6582094cacd37129c541aa2335595bb"
+  url: "https://github.com/LSSTDESC/augur/archive/v{{ version }}.tar.gz"
+  sha256: "ff3ee13dfb2746e31bb2cbedb4203114daed0de9e5662189cb813aa8753b277c"
 
 build:
   noarch: python
